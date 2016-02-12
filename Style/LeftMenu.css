@@ -1,0 +1,62 @@
+﻿body {    width: 1622px;
+    height: 1158px;
+}
+
+.menu {
+    height: 500px;
+    width : 235px;
+     list-style: none;
+  float  :left;
+   background: black;
+   font-family: Calibri;
+   font-size: large;
+   color:Gray;
+   
+}
+
+ .menu ul 
+{
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li 
+{
+   
+    background: black;
+
+   border-left: 3px solid red;
+    min-width: 120px;
+    float:left;
+    position:relative;
+    top: 0px;
+    left: 0px;
+    width: 220px;
+}  
+.menu ul ul {visibility:hidden;position:absolute;left:219px;top:10px;}   
+  
+.menu ul li:hover ul {visibility:visible;}
+ 
+.menu  a 
+ {
+     display:block;
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    color: #808080;
+    display: block;
+    font-family: 'Lucida Console';
+    font-size: 18px;
+    line-height: 54px;
+  padding: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+   
+}
+
+.menu a:hover{background:grey;color:#000;border:1px solid #000;}   
+.menu ul ul{}   
+.menu ul ul li {clear:both;text-align:center;font-size:10px;  width: 100px;}   
+.menu ul ul li a{display:block;width:100px;height:40px;margin:0;border-left:1px solid yellow;}   
+.menu ul ul li a:hover{border:0;background:grey;border:1px solid yellow;}   
+

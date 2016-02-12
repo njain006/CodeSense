@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+     <link href="Style/LeftMenu.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #form1
+        {
+            height: 1202px;
+            width: 1600px;
+        }
+    </style>
+   
+
+ 
+</head>
+<body background="images/53854d809e3a9d9ba5c20f613e617586.jpg">
+    <form id="form1" runat="server" 
+    
+    
+    
+    style="width: 1539px; background-image: url('/Group123_Blog/images/53854d809e3a9d9ba5c20f613e617586.jpg'); height: 100%;">
+    <div style="height: 100%; width: 1533px;">
+      <div style="height: 882px; width: 242px; float: left; background-color: #000000;" 
+            align="left" >
+          <asp:ImageButton ID="ImageButton1" runat="server" Height="131px" 
+              Width="239px" ImageUrl="~/images/logo.JPG" 
+              style="margin-left: 0px" PostBackUrl="~/Home.aspx" />
+              <div class="menu" style="height: 310px" align="center">
+                 <ul>
+                      <li><a id="current" href="Home.aspx">Home</a></li>
+                      <li><a id="" href="#">Category</a>
+                     
+                        <ul>
+                           <li><a id="" href="C++.aspx">C + +</a></li>
+                
+                           <li><a id="A2" href="CSS3.aspx">CSS3</a></li>
+                           <li><a id="A3" href="JAVA.aspx">JAVA</a></li>
+                           <li><a id="A4" href="JQurey.aspx">JQuery</a></li>
+                           <li><a id="A5" href="Python.aspx">Python</a></li>
+                           <li><a id="A6" href="PHP.aspx">PHP</a></li>
+                           <li><a id="A7" href="SQL.aspx">SQL</a></li>
+                           <li><a id="A8" href="ASPnet.aspx">ASP.net</a></li>
+                        
+                        </ul>
+                       </li>
+                       <li><a id="" href="ShowAuthors.aspx">Author</a></li>
+                        <li><a id="A19" href="ContactUs.aspx">Contact Us</a></li>
+                        <li><a id="A18" href="About.aspx">AboutUs</a></li> 
+                 </ul>
+              
+              </div>
+          <br />
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div 
+              style="height: 94px; width: 236px;" align="center"> 
+              <div style="border: 3px inset #C0C0C0; height: 82px; width: 209px; background-color: #FFFFFF;">
+                  <div align="left" style="height: 38px; width: 212px">
+                      <asp:Image ID="Image2" runat="server" Height="34px" 
+                          ImageUrl="~/images/SearchLogo.jpg" Width="34px" />
+&nbsp;
+                      <asp:Label ID="lblSearch" runat="server" Font-Bold="True" Font-Names="Calibri" 
+                          Font-Size="Medium" Text="Search"></asp:Label>
+                  </div><div align="center" style="width: 211px; height: 50px">&nbsp;<asp:TextBox 
+                          ID="txtSearch" runat="server" Width="158px" 
+                          ontextchanged="txtSearch_TextChanged"></asp:TextBox>
+&nbsp;</div></div></div>
+          <br /><div style="height: 194px; width: 239px;" align="center">
+              <div style="border: 3px inset #C0C0C0; height: 162px; width: 208px; background-color: #FFFFFF;"> 
+                  <div align="left" style="height: 36px; width: 201px"> 
+                  <asp:Image ID="Image1" runat="server" Height="32px" ImageUrl="~/images/login.jpg" 
+                          Width="36px" />&nbsp;<asp:Label ID="lblLogin" runat="server" 
+                          Font-Bold="True" Font-Names="Calibri" Font-Size="Medium" Text="User Login"></asp:Label>
+                  </div><div align="left" style="height: 134px; width: 211px;"> 
+                    
+                     &nbsp; <asp:Label ID="lblName" runat="server" Font-Bold="True" Font-Names="Calibri" 
+                          Font-Size="Small" Text="User Name:"></asp:Label>
+&nbsp;<asp:TextBox ID="txtEmail_ID" runat="server" Width="114px"></asp:TextBox><br />
+                      <br />
+                      &nbsp;<asp:Label ID="lblPassword" runat="server" Font-Bold="True" 
+                          Font-Names="Calibri" Font-Size="Small" Text="Password:"></asp:Label>
+&nbsp;&nbsp; <asp:TextBox ID="txtPassword" runat="server" Width="121px" TextMode="Password"></asp:TextBox>
+                      <br /><br />
+                    
+&nbsp;<asp:Button ID="btnLogin" runat="server" Font-Bold="True" Font-Names="Calibri" 
+                          Font-Size="Small" Text="Login" onclick="btnLogin_Click" />
+&nbsp;&nbsp;
+                      <asp:Button ID="btnReset" runat="server" Font-Bold="True" Font-Names="Calibri" 
+                          Font-Size="Small" Text="Reset" onclick="btnReset_Click" />
+&nbsp;&nbsp;
+                      <asp:Button ID="btnRegister" runat="server" Font-Bold="True" 
+                          Font-Names="Calibri" Font-Size="Small" Font-Underline="True" 
+                          Text="Register" Width="56px" onclick="btnRegister_Click" />
+                  </div></div></div>
+          <asp:HyperLink ID="HyperLink1" runat="server" Visible="False" 
+              NavigateUrl="~/ViewMyPost.aspx" ForeColor="White" Font-Underline="True">Author Page</asp:HyperLink>
+
+        </div>
+   <div align="left" style="width: 1285px; height: 100%">
+      
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+        
+     </div>
+
+      
+
+
+    </div>
+    </form>
+</body>
+</html>

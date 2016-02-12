@@ -1,0 +1,55 @@
+﻿body {
+}
+
+.box3
+{
+    width: 330px; 
+    height: 309px;
+}
+
+.box3 ul 
+{
+   list-style: none;
+    padding: 0;
+    margin: 0;
+   
+   
+   
+}
+.box3 li
+{
+    font-family:Calibri;
+    color:Black;
+    font-size:medium;
+
+  
+  
+
+    position:relative;
+    top: 0px;
+    left: 0px;
+    width: 220px;
+}
+
+.box3 a:hover 
+{
+    background:  #CFB53B;
+    border-bottom: 2px solid black;
+    color: black;
+}
+.box3  a 
+{
+  
+    
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    color: white;
+    display: block;
+    font-family: Calibri;
+
+    line-height: 54px;
+  padding: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+   
+
+}

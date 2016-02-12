@@ -1,0 +1,17 @@
+﻿body {
+}
+
+
+  .divcss { margin:10px auto} 
+
+ .divcss img{  -webkit-border-radius:50%;
+               -moz-border-radius:50%;
+               
+               -o-border-radius:50%;
+               -ms-border-radius:50%;
+                -webkit-transform:scale(0.7);
+                  -moz-transform:scale(0.7);
+                    -o-transform:scale(0.7);
+                     -ms-transform:scale(0.7);
+    height: 125px;
+}
